@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.test.homesdkdemo"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        pickFirst 'lib/*/libc++_shared.so'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation "com.android.support:recyclerview-v7:28.0.0"
+    implementation "com.android.support:support-fragment:28.0.0"
+    implementation "com.android.support:viewpager:28.0.0"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+    implementation "com.tuya.smart:tuyasmart-demo-login:3.17.6r141"
+    implementation "com.tuya.smart:tuyasmart-base:3.17.0r139-rc.3"
+    implementation 'com.tuya.smart:tuyasmart:3.17.6-beta2'
+    implementation "com.tuya.smart:tuyasmart-framework:3.17.0.3r139-external"
+    implementation 'com.tuya.android:dimencompat:1.0.1'
+    implementation 'com.tuya.smart:tuyasmart-uispecs:0.0.9'
+    implementation 'com.tuya.smart:tuyasmart-uiadapter:3.13.3r129-rc.4'
+    implementation 'com.tuya.smart:tuyasmart-stencilwrapper:3.17.0.2r139'
+
+    implementation "jp.wasabeef:recyclerview-animators:2.2.4"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.72'
+    implementation 'com.facebook.fresco:fresco:1.13.0'
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation 'com.tuya.smart:tuyasmart-video:3.12.6r125'
+    implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
+    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0-SNAPSHOT'
+    implementation 'com.tuya.android.module:tymodule-annotation:0.0.8'
+    implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
+
+    implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
+
+
+//    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation "com.android.support:support-fragment:28.0.0"
+//    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+//    implementation "com.android.support:recyclerview-v7:28.0.0"
+//    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+
+//    implementation "com.tuya.smart:tuyasmart-demo-login:3.17.6r141"
+//    implementation 'com.tuya.smart:tuyasmart:3.17.6-beta2'
+//    implementation "com.tuya.smart:tuyasmart-framework:3.17.0.3r139-external"
+//    implementation 'com.tuya.smart:tuyasmart-stencilwrapper:3.17.0.2r139'
+//    implementation "com.tuya.smart:tuyasmart-base:3.17.0r139-rc.3"
+//    implementation 'com.tuya.smart:tuyasmart-uispecs:0.0.9'
+
+//    implementation 'com.facebook.fresco:fresco:1.13.0'
+//    implementation 'com.alibaba:fastjson:1.1.67.android'
+//    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
+
+//    implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
+//    implementation "com.tuya.android.module:tymodule-annotation:0.0.8"
+
+    implementation 'com.tuya.smart:tuyasmart-webcontainer:3.17.6r141-open-rc.2'
+    implementation 'com.tuya.smart:tuyasmart-appshell:3.10.0'
+    implementation 'com.tuya.smart:tuyasmart-xplatformmanager:1.0.0'
+    implementation 'com.tuya.smart:tuyasmart-picture:3.12.0r123'
+
+
+    implementation 'com.tuya.smart:tuyasmart-feedback-api:3.17.6r141-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-feedback:3.17.6r141-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-rpc:3.12.0r123'
+
+    implementation "com.tuya.android:net-diagnosis:2.6.0-rc.1"
+    implementation 'com.tuya.smart:tuyasmart-netdiagnosis:3.11.7r121-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-netdiagnosisApi:3.11.7r121-rc.1'
+
+//    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.72'
+}

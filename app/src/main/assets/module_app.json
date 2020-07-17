@@ -1,0 +1,51 @@
+{
+  "serviceMap": {
+    "com.tuya.smart.api.service.H5Service": "com.tuya.smart.jsbridge.router.H5ServerImpl",
+    "com.tuya.smart.tuyamall.api.TuyaMallService": "com.tuya.smart.tuyamall.TuyaMallServiceImpl",
+    "com.tuya.smart.feedback.api.FeedbackService": "com.tuya.smart.feedback.FeedbackServiceImpl",
+    "com.tuya.smart.message.api.MessageService": "com.tuya.smart.message.MessageServiceImpl"
+  },
+  "eventMap": {
+    "global_user_event": [
+      {
+        "name": "com.tuya.smart.tuyamall.MallModuleApp",
+        "thread": false
+      }
+    ]
+  },
+  "moduleMap": {
+    "com.tuya.smart.ipc.UIVideoModuleApp": [
+      "camera_video_view"
+    ],
+    "com.tuya.smart.tuyamall.MallModuleApp": [
+      "mall_user_center"
+    ],
+    "com.tuya.smart.feedback.FeedbackApp": [
+      "helpAndFeedBack",
+      "add_feedback",
+      "feedback_list",
+      "helpCenter",
+      "chooseFeedbackType"
+    ],
+    "com.tuya.smart.netdiagnosis.NetDiagnosisModuleApp": [
+      "netdiagnosis_home"
+    ],
+    "com.tuya.smart.message.MessageApp": [
+      "messageCenter",
+      "message_details",
+      "push_setting"
+    ],
+    "com.tuya.smart.jsbridge.HyBridBrowserApp": [
+      "hybrid_browser",
+      "tuyaweb"
+    ],
+    "com.tuya.smart.VideoApp": [
+      "video_or_pic"
+    ]
+  },
+  "pipeLine": {
+    "PIPE_LINE_APPLICATION_SYNC": [
+      "com.tuya.smart.tuyamall.AppStartPipeLine"
+    ]
+  }
+}

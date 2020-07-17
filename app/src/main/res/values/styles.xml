@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="Default_Public_Theme" parent="AppTheme">
+        <!-- 菜单标题文字颜色 -->
+        <item name="app_bg_color">@color/app_bg_color</item>
+        <item name="list_primary_color">@color/list_primary_color</item>
+        <item name="list_sub_color">@color/list_sub_color</item>
+    </style>
+
+</resources>
