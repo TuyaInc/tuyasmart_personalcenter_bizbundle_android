@@ -2,9 +2,9 @@ package com.tuya.smart.android.personalcenter;
 
 import android.app.Application;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
 import com.tuya.smart.api.router.UrlBuilder;
 import com.tuya.smart.api.service.RouteEventListener;
+import com.tuya.smart.panel.base.utils.FrescoManager;
 import com.tuya.smart.sdk.TuyaSdk;
 import com.tuya.smart.wrapper.api.TuyaWrapper;
 
@@ -19,6 +19,7 @@ public class TuyaApplication extends Application {
 
             }
         });
-        Fresco.initialize(this);
+
+        FrescoManager.initFresco(this);
     }
 }

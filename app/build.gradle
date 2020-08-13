@@ -93,5 +93,8 @@ dependencies {
     implementation 'com.tuya.smart:tuyasmart-netdiagnosis:3.11.7r121-rc.1'
     implementation 'com.tuya.smart:tuyasmart-netdiagnosisApi:3.11.7r121-rc.1'
 
+    implementation 'com.tuya.smart:tuyasmart-panel:3.17.6r141-open'
+    implementation 'com.facebook.react:react-native:0.51.1.11'
+
 //    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.72'
 }
