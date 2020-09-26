@@ -50,8 +50,8 @@ dependencies {
 
     implementation 'com.tuya.smart:tuyasmart-video:3.12.6r125'
     implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
-    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0-SNAPSHOT'
-    implementation 'com.tuya.android.module:tymodule-annotation:0.0.8'
+    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.1'
+//    implementation 'com.tuya.android.module:tymodule-annotation:0.0.8'
     implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
 
     implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
@@ -95,7 +95,7 @@ dependencies {
     implementation 'com.tuya.smart:tuyasmart-netdiagnosisApi:3.11.7r121-rc.1'
 
     implementation 'com.tuya.smart:tuyasmart-panel:3.17.6r141-open'
-    implementation 'com.facebook.react:react-native:0.51.1.11'
+    implementation 'com.tuya.smart:react-native:0.51.1.11'
 
 //    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.72'
 }
